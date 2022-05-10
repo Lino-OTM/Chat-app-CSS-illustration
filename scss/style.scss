@@ -1,0 +1,238 @@
+@use "colors";
+@use "text-bubbles";
+
+body {
+  position: relative;
+  background-color: colors.$lightGrayishViolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.background-decoration-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18.8rem;
+  height: 48rem;
+  border-bottom-right-radius: 33rem;
+  background-image: linear-gradient(colors.$lightMagenta, colors.$lightViolet);
+}
+
+.background-decoration-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18rem;
+  height: 44rem;
+  border-start-start-radius: 35rem;
+  background-color: #ece9f0;
+  z-index: -1;
+}
+.mobile-container {
+  background-color: colors.$lightGrayishViolet;
+  border: 1rem solid #fff;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 24.75rem;
+  box-shadow: 0 0.7rem 2rem rgb(211, 211, 211);
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2.3rem;
+    width: 13rem;
+    top: -0.6rem;
+    left: calc(50% - 6.6rem);
+    background-color: colors.$white;
+    border-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &__hero {
+    background-image: linear-gradient(
+      to right,
+      colors.$lightViolet,
+      colors.$lightMagenta
+    );
+    text-align: start;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 3rem 1.5rem 1rem;
+    align-items: center;
+    color: colors.$white;
+
+    .fa-angle-left {
+      margin-right: 0.5rem;
+    }
+    &-img {
+      border-radius: 50%;
+      border: 1px solid colors.$white;
+      width: 2.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &-name {
+      font-size: 1.13rem;
+      font-weight: 500;
+      margin: 0 0 0.4rem;
+    }
+    &-status {
+      color: colors.$lightGrayishViolet;
+      opacity: 0.7;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    .fa-ellipsis-vertical {
+      margin-left: auto;
+    }
+  }
+
+  .main-mobile-content {
+    padding: 0.7rem;
+    text-align: start;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__first-text,
+    &__second-text {
+      @extend %left-text-bubbles;
+      width: 11.5rem;
+    }
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__images-container {
+      display: flex;
+      gap: 1rem;
+      margin: 0.8rem 0 0.5rem;
+    }
+
+    &__dog-picture {
+      width: 3.9rem;
+      border-radius: 1rem;
+    }
+
+    &__first-text,
+    &__second-text {
+      @extend %right-text-bubbles;
+    }
+
+    &__first-text {
+      width: 11rem;
+    }
+    &__second-text {
+      width: 6.5rem;
+    }
+  }
+
+  .third-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &__first-text {
+      @extend %left-text-bubbles;
+      width: 11rem;
+    }
+
+    &__first-color-bubble,
+    &__second-color-bubble {
+      @extend %colorful-text-bubbles;
+      background-image: linear-gradient(
+        to right,
+        colors.$lightMagenta,
+        colors.$lightViolet
+      );
+      width: 14rem;
+      display: flex;
+
+      &::before {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid colors.$veryLightMagenta;
+        margin-right: 0.7rem;
+      }
+    }
+
+    &__price {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-left: auto;
+    }
+  }
+
+  .main-mobile-content__input {
+    border: none;
+    border-radius: 3rem;
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+  }
+
+  .input-container {
+    position: relative;
+
+    .fa-angle-right {
+      position: absolute;
+      color: #fff;
+      background-color: colors.$veryDarkDesaturatedViolet;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      padding: 0.9rem;
+      right: 0.5rem;
+      bottom: 0.46rem;
+      height: 1rem;
+    }
+  }
+}
+
+.description-container {
+  &__title {
+    font-size: 3.9rem;
+    color: colors.$veryDarkDesaturatedViolet;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.63rem;
+    line-height: 2.8rem;
+    width: 85%;
+    max-width: 90rem;
+    margin: 0 auto;
+    color: #adadad;
+  }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(264, 100%, 61%);
+}

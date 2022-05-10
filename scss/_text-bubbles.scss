@@ -1,0 +1,29 @@
+@use "colors";
+
+%left-text-bubbles {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  color: colors.$lightViolet;
+  background-color: #ede4f5;
+  margin: 0.4rem 0;
+}
+
+%right-text-bubbles {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background-color: colors.$white;
+  margin: 0.4rem 0;
+}
+
+%colorful-text-bubbles {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  margin: 0.4rem 0;
+}

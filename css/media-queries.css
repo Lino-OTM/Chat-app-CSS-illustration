@@ -1,0 +1,38 @@
+body {
+  flex-direction: row;
+}
+
+.background-decoration-top {
+  width: 42rem;
+  height: 70rem;
+  border-end-end-radius: 26rem;
+  border-end-start-radius: 17rem;
+}
+
+.background-decoration-bottom {
+  width: 32rem;
+  height: 67rem;
+  border-start-start-radius: 18rem;
+  border-start-end-radius: 11rem;
+}
+
+.mobile-container {
+  margin-left: 20rem;
+  margin-bottom: 9rem;
+}
+
+.description-container {
+  width: 53rem;
+  text-align: start;
+  padding-left: 10.7rem;
+  margin-bottom: 12rem;
+}
+.description-container__text {
+  margin: 0;
+}
+
+.attribution {
+  text-align: start;
+}
+
+/*# sourceMappingURL=media-queries.css.map */
