@@ -6,7 +6,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ![](/design/desktop-preview.jpg)
 
-Link:
+Link: https://lino-otm.github.io/Chat-app-CSS-illustration/
 
 ### Built with:
 
