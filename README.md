@@ -4,7 +4,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ## Screenshot
 
-![](/design/desktop-preview)
+![](/design/desktop-preview.jpg)
 
 Link:
 
